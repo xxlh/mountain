@@ -1,0 +1,909 @@
+.part01{
+	position: absolute;
+    left: 0;
+    top: 0;
+	width: 253rem;
+	height: 100%;
+	background-size: 100% 100%;
+	background-color: #c9f3fc;
+	.telegraph_pole{
+		position: absolute;
+		width: 44.82rem;
+		height: 9.07rem;
+		left: 0;
+		bottom: 0.2rem;
+	}
+	#part1Parallax{
+		.mountain.m1{
+			position: absolute;
+			width: 28.55rem;
+			height: 4.13rem;
+			left: 0;
+			bottom: 0rem;
+		}
+		.mountain.m2{
+			position: absolute;
+			width: 25.02rem;
+			height: 5.55rem;
+			// left: 18.07rem;
+			left: 22.07rem;
+			bottom: 0rem;
+		}
+		.clound.c1{
+			position: absolute;
+			left: 12.5rem;
+			width: 4.47rem;
+			height: 2.22rem;
+			top:0.4rem;
+		}
+		.clound.c2{
+			position: absolute;
+			left: 13rem;
+			width: 15.57rem;
+			height: 8.13rem;
+			top:1.5rem;
+		}
+		.clound.c3{
+			position: absolute;
+			left: 34rem;
+			width: 14.76rem;
+			height: 4.42rem;
+			top:3rem;
+		}
+	}
+	
+
+	// 第二时代
+	.reclamation{
+		position: absolute;
+		width: 23.36rem;
+		height: 10.20rem;
+		left: 129rem;
+		bottom: 0rem;
+		.reclamationMask{
+			position: absolute;
+			overflow: hidden;
+			height: 1.20rem;
+			left: 10rem;
+			top: 1rem;
+			.reclamationText{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 5.93rem;
+				height: 1.20rem;
+			}
+		}
+	}
+	.monument{
+		position: absolute;
+		width: 50.03rem;
+		height: 10.30rem;
+		left: 138rem;
+		bottom: 0rem;
+		.contbg{
+			position: absolute;
+			width: 50.03rem;
+			height: 10.30rem;
+			left: 0rem;
+			bottom: 0rem;
+		}
+		.clound{
+			position: absolute;
+			width: 15.89rem;
+			height: 6.37rem;
+			left: 9rem;
+			top: -1rem;
+			animation-name: wobble;
+			animation-duration: 50s;
+			animation-iteration-count: infinite;
+			@-webkit-keyframes wobble{
+				0%,100%{ -webkit-transform:none; transform:none;}
+				20%{ -webkit-transform:translate3d(-5%,0,0) rotate3d(0,0,1,-5deg); transform:translate3d(-5%,0,0) rotate3d(0,0,1,-5deg);}
+				60%{ -webkit-transform:translate3d(5%,0,0) rotate3d(0,0,1,3deg); transform:translate3d(5%,0,0) rotate3d(0,0,1,3deg);}
+				80%{ -webkit-transform:translate3d(-5%,0,0) rotate3d(0,0,1,-3deg); transform:translate3d(-5%,0,0) rotate3d(0,0,1,-3deg);}
+				}
+			@keyframes wobble{
+				0%,100%{ -webkit-transform:none; transform:none;}
+				20%{ -webkit-transform:translate3d(-5%,0,0) rotate3d(0,0,1,-5deg); transform:translate3d(-5%,0,0) rotate3d(0,0,1,-5deg);}
+				60%{ -webkit-transform:translate3d(5%,0,0) rotate3d(0,0,1,3deg); transform:translate3d(5%,0,0) rotate3d(0,0,1,3deg);}
+				80%{ -webkit-transform:translate3d(-5%,0,0) rotate3d(0,0,1,-3deg); transform:translate3d(-5%,0,0) rotate3d(0,0,1,-3deg);}
+				}
+			
+		}
+		.birdsPole{
+			position: absolute;
+			width: 1rem;
+			height: 10.80rem;
+			left: 8rem;
+			top: 0rem
+		}
+		.birds{
+			position: absolute;
+			width: 8rem;
+			height: 5rem;
+			left: 13rem;
+			top: 12rem;
+			// background-color: #92908e;
+			.bird{
+				position: absolute;
+				width: 1.39rem;
+				height: 1.59rem;
+			&.b1{
+				left: 1rem;
+				top: 3rem;
+			}
+			&.b2{
+				right: 1.5rem;
+				top: 2rem;
+				transform: scale(0.8) rotate(-5deg);
+			}
+			&.b3{
+				right: 0rem;
+				top: 0rem;
+				transform: scale(0.5) rotate(5deg);
+			}
+			&.b4{
+				left: 1rem;
+				top: 0rem;
+				transform: scale(0.2) rotate(-5deg);
+			}
+			&.b5{
+				right: 2rem;
+				top: 1rem;
+				transform: scale(0.4) rotate(15deg);
+			}
+			&.b6{
+				left: 1.5rem;
+				top: 1rem;
+				transform: scale(0.7) rotate(25deg);
+			}
+			}
+		}
+		.hand{
+			position: absolute;
+			width: 0.98rem;
+			height:0.96rem;
+			left: 24rem;
+			top: 2rem;
+			opacity: 0;
+			animation: leftDowm 1s infinite;
+		}
+		.monumentMaskPole{
+			position: absolute;
+			width: 1rem;
+			height: 10.80rem;
+			left: 20rem;
+			top: 0rem
+		}
+		.monumentMask{
+			position: absolute;
+			overflow: hidden;
+			height: 1.20rem;
+			left: 23.5rem;
+			top: 1rem;
+			.monumentText{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 5.89rem;
+				height: 0.87rem;
+			}
+		}
+	}
+	.part2Parallax{
+		.mountain{
+			position: absolute;
+			width: 43.82rem;
+			height: 10.80rem;
+			left: 150rem;
+			bottom: 0;
+		}
+		.pagoda{
+			position: absolute;
+			width: 13.50rem;
+			height: 7.04rem;
+			left: 180rem;
+			bottom: 0;
+		}
+	}
+	.rocks{
+		position: absolute;
+		width: 25.51rem;
+		height: 10.80rem;
+		left: 176rem;
+		bottom: 0rem;
+		.rocksMask{
+			position: absolute;
+			overflow: hidden;
+			height: 1.20rem;
+			left: 16rem;
+			top: 1rem;
+			.rocksText{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 7.37rem;
+				height: 0.87rem;
+			}
+		}
+	}
+	.garden{
+		position: absolute;
+		width: 71.60rem;
+		height: 10.80rem;
+		left:184rem;
+		bottom: 0rem;
+		.clound4{
+			position: absolute;
+			width: 22.01rem;
+			height: 7.83rem;
+			left:42rem;
+			top: 0rem;
+		}
+		.gardenHead{
+			position: absolute;
+			width: 61.36rem;
+			height: 5.72rem;
+			left:10rem;
+			bottom: 0rem;
+		}
+		.gardenName{
+			top: -0.5rem;
+			position: absolute;
+			width: 19.76rem;
+			height: 11.01rem;
+			left: 27.2rem;
+		}
+		.gardenNameSide{
+			position: absolute;
+			width: 11.82rem;
+			height: 8.49rem;
+			left: 41.5rem;
+			bottom: 0.5rem;
+			.side{
+				position: absolute;
+				width: 5.31rem;
+				height: 8.49rem;
+				left: 0.5rem;
+				.dragonfly{
+					position: absolute;
+					width: 0.65rem;
+					height: 0.85rem;
+					left: 5rem;
+					top: 1rem;
+					animation-name: rightMove, bottomMove;
+					animation-duration: 5s;
+					animation-iteration-count: infinite;
+					@keyframes rightMove{
+						80% {
+						 animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+						 left: 300px;
+					   }
+					 }
+				  
+					 @keyframes bottomMove{
+					   80% {
+						 animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+						 top: 130px;
+					   }
+					 }
+				}
+			}
+			.ston{
+				position: absolute;
+				width: 7.25rem;
+				height: 4.80rem;
+				left: 5rem;
+				bottom: -0.1rem;
+				.flower{
+					position: absolute;
+					width: 1.87rem;
+					height: 2.34rem;
+					left: 4rem;
+					bottom: 0.5rem;
+					animation: rotateHead 1s infinite;
+					transform-origin: center  bottom;
+					-webkit-animation: rotateHead 1s infinite;
+					-webkit-transform-origin: center bottom;
+					&>img{
+						vertical-align: top;
+					}
+					@-webkit-keyframes rotateHead{ 
+						0%,100%{ -webkit-transform:rotate(0deg); transform:rotate(0deg);}
+						10%,30%,70%{ -webkit-transform:rotate(5deg); transform:rotate(5deg);}
+						20%,60%,80%{ -webkit-transform:rotate(5deg); transform:rotate(5deg);}
+					}
+					@keyframes rotateHead{ 
+						0%,100%{ -webkit-transform:rotate(0deg); transform:rotate(0deg);}
+						10%,30%,70%{ -webkit-transform:rotate(5deg); transform:rotate(5deg);}
+						20%,60%,80%{ -webkit-transform:rotate(5deg); transform:rotate(5deg);}
+					}
+				}
+			}
+			
+		}
+		.garden2{
+			position: absolute;
+			width: 32.68rem;
+			height: 8.27rem;
+			left: 12rem;
+			bottom: -0rem;
+		}
+		.gardenr1{
+			position: absolute;
+			width: 28.93rem;
+			height: 5.91rem;
+			left: 22.4rem;
+			bottom: 0.5rem;
+		}
+		.garden1{
+			position: absolute;
+			width: 24.76rem;
+			height: 8.09rem;
+			left: 10rem;
+			bottom: -1rem;
+		}
+		.gardenMountainl{
+			position: absolute;
+			width: 28.36rem;
+			height: 8.73rem;
+			left: 0rem;
+			bottom: 1rem;
+		}
+		.gardenMountain{
+			position: absolute;
+			width: 34.18rem;
+			// height: 9.18rem;
+			left:38rem;
+			bottom: 0rem;
+		}
+		.parentPole{
+			position: absolute;
+			width: 1rem;
+			height: 10.80rem;
+			left: 24rem;
+			top: 0rem
+		}
+		.parent{
+			position: absolute;
+			width: 2.73rem;
+			height: 4.80rem;
+			left: 26rem;
+			bottom: 0.5rem;
+		}
+		.child{
+			position: absolute;
+			width: 1.40rem;
+			height: 2.24rem;
+			left:40rem;
+			bottom: 0.8rem;
+			.windmill{
+				position: absolute;
+				width: 0.69rem;
+				height: 0.75rem;
+				right: -0.5rem;
+				top: -0.2rem;
+				animation: rotateW 1s infinite;
+				transform-origin: center  center;
+				-webkit-animation: rotateW 1s infinite;
+				-webkit-transform-origin: center center;
+				&>img{
+					vertical-align: top;
+				}
+				@-webkit-keyframes rotateW{ 
+					0%{ -webkit-transform:rotate(0deg); transform:rotate(0deg);}
+					100%{ -webkit-transform:rotate(360deg); transform:rotate(360deg);}
+				}
+				@keyframes rotateW{ 
+					0%{ -webkit-transform:rotate(0deg); transform:rotate(0deg);}
+					100%{ -webkit-transform:rotate(360deg); transform:rotate(360deg);}
+				}
+			}
+		}
+		.gardenMaskPole{
+			position: absolute;
+			width: 1rem;
+			height: 10.80rem;
+			left: 23rem;
+			top: 0rem
+		}
+		.gardenMask{
+			position: absolute;
+			overflow: hidden;
+			height: 1.20rem;
+			left: 28rem;
+			top: 0.5rem;
+			.gardenText{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 7.44rem;
+				height: 0.86rem;
+			}
+		}
+	}
+}
+
+.train{
+	position: fixed;
+	width: 14.07rem;
+	height: 10.59rem;
+	left: 0;
+	// overflow: hidden;
+	@keyframes wheelRotate{
+		0% {
+			transform: rotate(0);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+	@keyframes axleRotate{
+		to{transform: rotate(1turn);}
+	}
+	@keyframes axleReverse{
+		from{
+			transform:rotate(1turn);
+		}
+	}
+	.trainGreen{
+		position: absolute;
+		width:14.07rem;
+		height: 6.04rem;
+		right: 0;
+		bottom: -0.4rem;
+		opacity: 0;
+		overflow: hidden;
+		.trainBody{
+			position: absolute;
+			width: 14.07rem;
+			height: 6.04rem;
+			left: 0;
+			bottom: 0.4rem;
+		}
+	}
+	.trainSteam{
+		position: absolute;
+		width: 14.07rem;
+		height: 10.59rem;
+		left: 0;
+		bottom: 0;
+		overflow: hidden;
+		.trainBody{
+			position: absolute;
+			width: 14.07rem;
+			height: 10.59rem;
+			left: 0;
+		}
+	}
+	.steam{
+		position: absolute;
+		width: 12.02rem;
+		height: 3.73rem;
+		top: 0;
+		left:0%;
+	}
+	.wheel{
+		position: absolute;
+		width: 2.03rem;
+		height: 2.08rem;
+		bottom: 0;
+		left: 26%;
+		animation: wheelRotate 2s linear infinite;
+	}
+	.w1{left: 26%;}
+	.w2{left: 41%;}
+	.w3{left: 56%;}
+
+	.wheel-joint {
+		animation: wheel-joint 2s linear infinite;
+		width: 2.33rem;
+		height: 0.36rem;
+		top: 0.1rem;
+		right: 50%;
+		position: absolute;
+		transform-origin: 95% 50%;
+		z-index: 1;
+		background-image: url("../images/part1/short_axle.png");
+		background-size: 100% 100%;
+	}
+	.wheel-joint-2 {
+		width: 2.5rem;
+		height: 0.35rem;
+		top: 0.1rem;
+		transform: rotate(10deg);
+		left:40%;
+		transform-origin:4% 50%;
+		background-image: url("../images/part1/long_axle1.png");
+		background-size: 100% 100%;
+	}
+	@keyframes wheel-joint {
+		100% {
+			transform: rotate(-360deg);
+		}
+	}
+
+	.axle {
+		width:7.17rem;
+		height: 2.50rem;
+		bottom: 0.2rem;
+		right: 0%;
+		position: absolute;
+		z-index: 1;
+	}
+
+}
+.trainStation{
+	position: absolute;
+	width: 28.13rem;
+	height: 10.80rem;
+	left: 34.24rem;
+	bottom: 0;
+	
+	.egret{
+		position: absolute;
+		left: 14.61rem;
+		width: 1.71rem;
+		height:2.93rem;
+		top:6.36rem;
+		animation: tiao 2s ease-in-out infinite;
+		@keyframes tiao{
+			0% {
+				transform: translateY(0);
+			}
+			40% {
+				transform: translateY(-5px);
+			}
+			100%{
+				transform: translateY(0);
+			}
+		}
+		.egret_left{
+			position: absolute;
+			left: 0rem;
+			width: 0.35rem;
+			height: 0.39rem;
+			top: 1.11rem;
+			animation: handskew 1s linear infinite;
+			transform-origin: right center;
+		}
+		.egret_right{
+			position: absolute;
+			right: 0.3rem;
+			width: 0.24rem;
+			height: 0.40rem;
+			top: 1.19rem;
+			animation: handskew 1s linear infinite;
+			transform-origin: left center;
+		}
+		@keyframes handskew{
+			0% {
+				transform: rotateY(0);
+			}
+			100%{
+				transform: rotateY(50deg);
+			}
+		}
+		
+	}
+}
+.trainPole{
+	position: absolute;
+	width: 2.06rem;
+	height: 10.80rem;
+	left: 58.72rem;
+	bottom: 0;
+}
+.liberateMask{
+	position: absolute;
+	overflow: hidden;
+	// width: 6.48rem;
+	height: 1.16rem;
+	left: 62rem;
+	top: 0.7rem;
+	.liberateText{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 6.48rem;
+		height: 1.16rem;
+	}
+}
+.liberateMask1{
+	position: absolute;
+	overflow: hidden;
+	// width: 6.48rem;
+	height: 0.84rem;
+	left: 77.09rem;
+	top: 0.7rem;
+	.liberateText1{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 8.72rem;
+		height: 0.84rem;
+		&>img{
+			vertical-align: top;
+		}
+	}
+}
+.redScarfMask{
+	position: absolute;
+	overflow: hidden;
+	// width: 6.48rem;
+	height: 0.84rem;
+	left: 97.09rem;
+	top: 1rem;
+	.redScarfText{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 12.10rem;
+		height: 0.84rem;
+		&>img{
+			vertical-align: top;
+		}
+	}
+}
+.liberate{
+	position: absolute;
+	overflow: hidden;
+	width: 16.72rem;
+	height: 10.59rem;
+	left: 60rem;
+	bottom: 0.2rem;
+	.redFlag{
+		position: absolute;
+		width: 3.33rem;
+		height:4rem;
+		left: 13.35rem;
+		top: 0.1rem;
+	}
+	.mountain{
+		position: absolute;
+		width: 16.72rem;
+		height: 10.59rem;
+		left: 0rem;
+		top: 0rem;
+	}
+	.hand{
+		position: absolute;
+		width: 0.98rem;
+		height:0.96rem;
+		left: 14rem;
+		top: 2rem;
+		animation: leftDowm 1s infinite;
+	}
+
+	@-webkit-keyframes scaleFade {
+		from {
+		  -webkit-transform: scale(0.5);opacity: 0.5;
+		  transform: scale(0.5);opacity: 0.5;
+		}
+		to {
+		  -webkit-transform: scale(1);opacity: 1;
+		  transform:  scale(1);opacity: 1;
+		}
+	  }
+	@keyframes scaleFade {
+		from {
+			-webkit-transform: scale(0.5);opacity: 0.5;
+			transform: scale(0.5);opacity: 0.5;
+		  }
+		  to {
+			-webkit-transform: scale(1);opacity: 1;
+			transform:  scale(1);opacity: 1;
+		  }
+	}
+	.circles{
+		position: absolute;
+		left: 13.1rem;
+		top: 3.3rem;
+		width: 1rem;
+		height: 0.5rem;
+		animation: scaleFade 1s infinite;
+		&>img{
+			vertical-align: top;
+		}
+	}
+}
+.redScarf{
+	position: absolute;
+	overflow: hidden;
+	width: 17.54rem;
+	height: 10.42rem;
+	left: 83.77rem;
+	bottom: 0.2rem;
+	.redScarfAn{
+		position: absolute;
+		width: 17.54rem;
+		height: 10.42rem;
+		left: 0rem;
+		top: 0rem
+	}
+	.redScarfMaskPole{
+		position: absolute;
+		width: 1rem;
+		height: 10.80rem;
+		left: 5rem;
+		top: 0rem
+	}
+}
+.dams{
+	position: absolute;
+	overflow: hidden;
+	width: 72.24rem;
+	height: 10.80rem;
+	left: 70rem;
+	bottom: 0rem;
+	.redScarfAn{
+		position: absolute;
+		width: 17.54rem;
+		height: 10.42rem;
+		left: 0rem;
+		top: 0rem
+	}
+	.dams_text{
+		position: absolute;
+		width: 10.02rem;
+		height: 0.37rem;
+		left: 51.5rem;
+		top: 6.5rem;
+	}
+}
+.boat1{
+	position: absolute;
+	overflow: hidden;
+	width:2.78rem;
+	height: 3.03rem;
+	left: 11rem;
+	bottom: 3.2rem;
+	animation: wobble 20s infinite;
+	@-webkit-keyframes wobble{
+		0%,100%{ -webkit-transform:none; transform:none;}
+		15%{ -webkit-transform:translate3d(-25%,0,0) rotate3d(0,0,1,-5deg); transform:translate3d(-25%,0,0) rotate3d(0,0,1,-5deg);}
+		30%{ -webkit-transform:translate3d(20%,0,0) rotate3d(0,0,1,3deg); transform:translate3d(20%,0,0) rotate3d(0,0,1,3deg);}
+		45%{ -webkit-transform:translate3d(-15%,0,0) rotate3d(0,0,1,-3deg); transform:translate3d(-15%,0,0) rotate3d(0,0,1,-3deg);}
+		60%{ -webkit-transform:translate3d(10%,0,0) rotate3d(0,0,1,2deg); transform:translate3d(10%,0,0) rotate3d(0,0,1,2deg);}
+		75%{ -webkit-transform:translate3d(-5%,0,0) rotate3d(0,0,1,-1deg); transform:translate3d(-5%,0,0) rotate3d(0,0,1,-1deg);}
+	}
+	@keyframes wobble{
+		0%,100%{ -webkit-transform:none; transform:none;}
+		15%{ -webkit-transform:translate3d(-25%,0,0) rotate3d(0,0,1,-5deg); transform:translate3d(-25%,0,0) rotate3d(0,0,1,-5deg);}
+		30%{ -webkit-transform:translate3d(20%,0,0) rotate3d(0,0,1,3deg); transform:translate3d(20%,0,0) rotate3d(0,0,1,3deg);}
+		45%{ -webkit-transform:translate3d(-15%,0,0) rotate3d(0,0,1,-3deg); transform:translate3d(-15%,0,0) rotate3d(0,0,1,-3deg);}
+		60%{ -webkit-transform:translate3d(10%,0,0) rotate3d(0,0,1,2deg); transform:translate3d(10%,0,0) rotate3d(0,0,1,2deg);}
+		75%{ -webkit-transform:translate3d(-5%,0,0) rotate3d(0,0,1,-1deg); transform:translate3d(-5%,0,0) rotate3d(0,0,1,-1deg);}
+	}
+
+}
+.boat{
+	position: absolute;
+	overflow: hidden;
+	width:4.52rem;
+	height: 3.86rem;
+	left: 28rem;
+    bottom: 3.2rem;
+}
+.tunk{
+	position: absolute;
+	overflow: hidden;
+	width:3rem;
+	height: 3.57rem;
+	left: 44rem;
+	bottom: 2rem;
+	transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+}
+.title{
+	position: absolute;
+	left: 6.92rem;
+	width: 10.53rem;
+	height: 4.10rem;
+	top:1.52rem;
+}
+.titlePole{
+	position: absolute;
+	left:14rem;
+	width: 1rem;
+	height: 10.80rem;
+	top:0rem;
+	
+}
+@-webkit-keyframes jackInTheBox {
+	from {
+	  opacity: 0;
+	  -webkit-transform: scale(0.1) rotate(30deg);
+	  transform: scale(0.1) rotate(30deg);
+	  -webkit-transform-origin: center bottom;
+	  transform-origin: center bottom;
+	}
+  
+	50% {
+	  -webkit-transform: rotate(-10deg);
+	  transform: rotate(-10deg);
+	}
+  
+	70% {
+	  -webkit-transform: rotate(3deg);
+	  transform: rotate(3deg);
+	}
+  
+	to {
+	  opacity: 1;
+	  -webkit-transform: scale(1);
+	  transform: scale(1);
+	}
+  }
+  
+@keyframes jackInTheBox {
+from {
+	opacity: 0;
+	-webkit-transform: scale(0.1) rotate(30deg);
+	transform: scale(0.1) rotate(30deg);
+	-webkit-transform-origin: center bottom;
+	transform-origin: center bottom;
+}
+
+50% {
+	-webkit-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+
+70% {
+	-webkit-transform: rotate(3deg);
+	transform: rotate(3deg);
+}
+
+to {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+}
+  
+.jackInTheBox {
+-webkit-animation-name: jackInTheBox;
+animation-name: jackInTheBox;
+}
+
+@-webkit-keyframes leftDowm {
+	from {
+	  -webkit-transform: translate(0,0);
+	  transform: translate(0,0);
+	}
+	to {
+	  -webkit-transform: translate(-10px,10px);
+	  transform: translate(-10px,10px);
+	}
+  }
+@keyframes leftDowm {
+	from {
+		-webkit-transform: translate(0,0);
+		transform: translate(0,0);
+	  }
+	  to {
+		-webkit-transform: translate(-10px,10px);
+		transform: translate(-10px,10px);
+	  }
+}
+
+.trainAxle{
+	position: fixed;
+	left: 0;
+	// width: 100%;
+	width: 34.82rem;
+	height: 0.21rem;
+	background-image: url(../images/part1/train_axle.png);
+	background-size: 100% 100%;
+	background-repeat: repeat-x;
+	bottom: 0;
+	& img{
+		vertical-align: top;
+	}
+
+
+	
+}
+

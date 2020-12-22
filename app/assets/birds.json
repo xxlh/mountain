@@ -1,0 +1,39 @@
+{"frames": {
+
+"birds0.png":
+{
+	"frame": {"x":1,"y":1,"w":138,"h":159},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":138,"h":159},
+	"sourceSize": {"w":138,"h":159}
+},
+"birds1.png":
+{
+	"frame": {"x":1,"y":293,"w":137,"h":128},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":31,"w":137,"h":128},
+	"sourceSize": {"w":138,"h":159}
+},
+"birds2.png":
+{
+	"frame": {"x":1,"y":162,"w":137,"h":129},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":30,"w":137,"h":129},
+	"sourceSize": {"w":138,"h":159}
+}},
+"animations": {
+	"birds": ["birds0.png","birds1.png","birds2.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "birds.png",
+	"format": "RGBA8888",
+	"size": {"w":140,"h":422},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a8dc74a0d21d6158f42ebe89cd4aeded:a4f78ab4ee92db3fbebf198632bdc404:05064d7bb83a0e2b52752dd6e3168bce$"
+}
+}

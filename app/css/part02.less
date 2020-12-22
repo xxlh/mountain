@@ -1,0 +1,227 @@
+.part02{
+	position: absolute;
+    left:243rem;
+    top: 0;
+	width: 200rem;
+	height: 100%;
+	background-size: 100% 100%;
+	// background-color: #c9f3fc;
+	@-webkit-keyframes rotateL{
+		0%,100%{ -webkit-transform:none; transform:none;}
+		20%{ -webkit-transform:rotate3d(0,0,1,-5deg); transform:rotate3d(0,0,1,-5deg);}
+		60%{ -webkit-transform:rotate3d(0,0,1,3deg); transform:rotate3d(0,0,1,3deg);}
+		80%{ -webkit-transform:rotate3d(0,0,1,-3deg); transform:rotate3d(0,0,1,-3deg);}
+		}
+	@keyframes rotateL{
+		0%,100%{ -webkit-transform:none; transform:none;}
+		20%{ -webkit-transform:rotate3d(0,0,1,-5deg); transform:rotate3d(0,0,1,-5deg);}
+		60%{ -webkit-transform:rotate3d(0,0,1,3deg); transform:rotate3d(0,0,1,3deg);}
+		80%{ -webkit-transform:rotate3d(0,0,1,-3deg); transform:rotate3d(0,0,1,-3deg);}
+		}
+	.lotusPole{
+		position: absolute;
+		width: 1rem;
+		height: 9.07rem;
+		left: 4rem;
+		bottom: 0rem;
+	}
+	.lotus2{
+		position: absolute;
+		width: 7.590rem;
+		height: 11.08rem;
+		left: -4rem;
+		bottom: 0.2rem;
+		transform: scale(1.2);
+		animation-name: rotateL;
+		animation-duration: 15s;
+		animation-iteration-count: infinite;
+		transform-origin: bottom right;
+	}
+	.lotus{
+		position: absolute;
+		width: 11.90rem;
+		height: 11.16rem;
+		left: -5rem;
+		bottom:0rem;
+		animation-name: rotateL;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+		transform-origin: bottom center;
+		animation-delay: 1s;
+		.lotus1{
+			position: absolute;
+			width: 11.90rem;
+			height: 11.16rem;
+			left: 0rem;
+			bottom: 0;
+		}
+	}
+	.leafs{
+		position: absolute;
+		width: 12rem;
+		height: 9rem;
+		left: 31.2rem;
+		top: 0rem;
+		.leaf{
+			position: absolute;
+			width: .26rem;
+			left: 1rem;
+			top: 1rem;
+			&.l1{
+				left: 2rem;
+				top: 0rem;
+				transform: scale(1.1) rotate(5deg);
+			}
+			&.l2{
+				left: 3rem;
+				top: 0rem;
+				transform: scale(1.2) rotate(-5deg);
+			}
+			&.l3{
+				left: 13rem;
+				top: 4rem;
+				transform: scale(1.3) rotate(3deg);
+			}
+			&.l4{
+				left: 9rem;
+				top: 1.5rem;
+				transform: scale(1.1) rotate(-3deg);
+			}
+			&.l5{
+				left: 12rem;
+				top: 6rem;
+				transform: scale(1.2) rotate(7deg);
+			}
+			&.l6{
+				left: 9rem;
+				top: 7rem;
+				transform: scale(1.4) rotate(-7deg);
+			}
+			&.l7{
+				left: 7rem;
+				top: 8rem;
+			}
+		}
+	}
+	.schoolbg{
+		position: absolute;
+		width: 73.76rem;
+		height: 9.76rem;
+		left: 1rem;
+		bottom: 0rem;
+		.paper{
+			position: absolute;
+			width: 0.77rem;
+			left: 39.5rem;
+    		bottom: 2.8rem;
+		}
+		.oldman{
+			position: absolute;
+			width: 3.97rem;
+			left: 32.5rem;
+			bottom: .8rem;
+		}
+		.woman{
+			position: absolute;
+			width: 2.54rem;
+			left: 37.5rem;
+			bottom: .8rem;
+		}
+		.man{
+			position: absolute;
+			width: 2.36rem;
+			left: 39.5rem;
+			bottom: .5rem;
+		}
+		.wind{
+			position: absolute;
+			width: 9.82rem;
+			height: 3.34rem;
+			left: 39.5rem;
+			top: .5rem;
+		}
+		.wind{
+			position: absolute;
+			// width: 9.82rem;
+			width: 0;
+			height: 3.34rem;
+			left: 33.5rem;
+			top: 0rem;
+			overflow: hidden;
+			// animation-name: widthChange;
+			// animation-duration: 2s;
+			// animation-iteration-count: 3;
+			// @-webkit-keyframes widthChange{
+			// 	0%{width: 0}
+			// 	100%{width:  9.82rem}
+			// }
+			// @keyframes widthChange{
+			// 	0%{width: 0}
+			// 	100%{width:  9.82rem}
+			// }
+		}
+		
+	}
+	.school{
+		position: absolute;
+		width: 17.36rem;
+		height: 9.4rem;
+		left: 15.2rem;
+		bottom: 0rem;
+		.stu1{
+			position: absolute;
+			width: 1.83rem;
+			height: 3.75rem;
+			left: 9rem;
+			bottom: .5rem;
+		}
+		.stu2{
+			position: absolute;
+			width: 1.56rem;
+			height: 3.33rem;
+			left: 10.3rem;
+			bottom: 0.5rem;
+		}
+		.stu3{
+			position: absolute;
+			width: 4.19rem;
+			height: 4.8rem;
+			left: 4.5rem;
+			bottom: .5rem;
+		}
+		.tree{
+			position: absolute;
+			width: 6.4rem;
+			left: 12.2rem;
+			bottom: .5rem;
+		}
+		.birds{
+			position: absolute;
+			width: 6rem;
+			height: 6rem;
+			left: 12.2rem;
+			top: 1.5rem;
+			.bird{
+				position: absolute;
+				width: 1.2rem;
+				&.b1{
+					left: 1rem;
+					top: 1rem;
+				}
+				&.b2{
+					left: 1.5rem;
+					top: 3rem;
+					transform: scale(1.2) rotate(-5deg);
+				}
+				&.b3{
+					right: 0rem;
+					top: 2rem;
+					transform: scale(0.8) rotate(5deg);
+				}
+			}
+		}
+		
+	}
+}
+
+

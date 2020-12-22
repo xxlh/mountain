@@ -1,0 +1,16 @@
+composer.lock
+
+runtime/*
+node_modules/
+
+app/assets/*.mp4
+
+public/
+public/docs
+public/uploads
+
+gitc
+
+.idea/
+.vscode/
+.env
