@@ -28,7 +28,7 @@ let app =new App();
 window.story = new StoryScroll ({
 	direction: 'y',
 	width: desiginwidth,
-	length: 80000,
+	length: 11700,
 	loader: true,
 	antialias: true,
 	progressive: true,
@@ -310,6 +310,17 @@ textTitle5.on('pointerdown', async()=>{
 	$(".inforBox .user_name").html(initInfo.motion_type)
 	inforBoxShow(require("../images/3.jpg"));
 });
+
+
+let end = story.sprite(require("@/images/scroll_21.png"),{x:0, y:indexHeight + 9600,}).actionByStep({x:0,  y:indexHeight + 9600 - 300}, 500, indexHeight + 9600 - story.viewLength/2)
+let guodu = story.sprite(require("@/images/scroll_19.png"),{x:0, y:indexHeight + 7500,}).actionByStep({x:0,  y:indexHeight + 7500 - 100}, 500, indexHeight + 7500 - story.viewLength/2)
+let zhulin = story.sprite(require("@/images/scroll_18.png"),{x:0, y:indexHeight + 6500,}).actionByStep({x:0,  y:indexHeight + 6500 - 100}, 500, indexHeight + 6500 - story.viewLength/2)
+let ri = story.sprite(require("@/images/scroll_20.png"),{x:0, y:indexHeight + 8600,}).actionByStep({x:0,  y:indexHeight + 8600 - 100}, 500, indexHeight + 8600 - story.viewLength/2)
+let lanche = story.sprite(require("@/images/scroll_17.png"),{x:0, y:indexHeight + 5300,}).actionByStep({x:0,  y:indexHeight + 5300 - 100}, 500, indexHeight + 5300 - story.viewLength/2)
+let piaoliu = story.sprite(require("@/images/scroll_16.png"),{x:0, y:indexHeight + 4200,}).actionByStep({x:0,  y:indexHeight + 4200 - 100}, 500, indexHeight + 4200 - story.viewLength/2)
+let pubu = story.sprite(require("@/images/scroll_14.png"),{x:0, y:indexHeight + 3800,}).actionByStep({x:0,  y:indexHeight + 3800 - 50}, 100, indexHeight + 3800 - story.viewLength/2)
+let pubu2 = story.sprite(require("@/images/scroll_15.png"),{x:0, y:indexHeight + 4400,}).actionByStep({x:0,  y:indexHeight + 4400 - 200}, 500, indexHeight + 4400 - story.viewLength/2)
+
 
 
 
