@@ -1,7 +1,7 @@
 import "../css/index.css"
 import StoryScroll from 'storyscroll'
 import {act, action} from 'storyscroll/action';
-import {sprite2d, chapter2d} from 'storyscroll/projection'
+// import {sprite2d, chapter2d} from 'storyscroll/projection'
 import {desiginwidth} from "./config"
 import wxShare from "@lib/wxShare"
 import $ from 'jquery';
@@ -30,6 +30,7 @@ window.story = new StoryScroll ({
 	width: desiginwidth,
 	length: 80000,
 	loader: true,
+	delay: 800,
 	antialias: true,
 	progressive: true,
 	// debug:start
@@ -130,13 +131,13 @@ let logo = story.sprite(require("@/images/logo.png"), {x:66, y:66,});
 let lineCont = story.chapter({x:68, y:362, width:589, height:589});
 	let liberateText = lineCont.sprite(require("@/images/line.png"));
 	
-	let lineMask = lineCont.graphic({scale:{x:1, y:0}});
+	let lineMask = lineCont.graphic({scale:{x:1, y:0}}).action({scale:{x:1,y:1}}, 2,0);
 		lineMask.lineStyle(0);
 		lineMask.beginFill(0);
 		lineMask.drawRect(0,0,589,589);
 		lineMask.endFill(0);
 	lineCont.mask = lineMask;
-
+	
 
 let mountain1 = story.sprite(require("@/images/scroll_1.png"), {x:0, y:indexHeight + 130,});
 let clound11 = story.sprite(require("@/images/yun_1.png"), {x:400, y:indexHeight + 250,}).actionByStep({x:700}, 900, indexHeight + 250 - story.viewLength/2);
@@ -311,12 +312,18 @@ textTitle5.on('pointerdown', async()=>{
 	inforBoxShow(require("../images/3.jpg"));
 });
 
+	// test
+	var graphic = story.graphic({x:40, y:540}).action({x: 0,y:400, onComplete:e=>{
+		graphic.act({x:-10, y:600, delay:.3}, 1.2);
+	}}, 0.8, 0);
+	graphic.beginFill(0xDE3249);
+	graphic.drawRect(50, 50, 100, 100);
+	graphic.endFill();
 
 
-story.loader.on("progress", loader => $("#percent").html((loader.progress|0) + "%"))
-.load(loader => {
+story.loader.onProgress.add(loader => $("#percent").html((loader.progress|0) + "%"))
+story.loader.load(loader => {
 	$("#loading").fadeOut();
-	lineMask.action({scale:{x:1,y:1}}, 2,0)
 	// lineMask.play();
 	getMusic();
 	clickOp();
