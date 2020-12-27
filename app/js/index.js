@@ -28,7 +28,7 @@ let app =new App();
 window.story = new StoryScroll ({
 	direction: 'y',
 	width: desiginwidth,
-	length: 11700,
+	length: 12000,
 	loader: true,
 	delay: 800,
 	antialias: true,
@@ -106,32 +106,84 @@ stop();
 window.addEventListener('resize', stop, false);
 
 
+// let line = story.sprite(require("@/images/line.png"), {x:40, y:200,});
+
 
 let indexHeight= 600;
 let index = story.sprite(require("@/images/index.png"), {x:0, y:0,});
 let logo = story.sprite(require("@/images/logo.png"), {x:66, y:66,});
-	story.sprite(require("@/images/t1.png"), {x:134, y:220,});
-	story.sprite(require("@/images/t2.png"), {x:205, y:226,});
-	story.sprite(require("@/images/t3.png"), {x:265, y:203,});
-	story.sprite(require("@/images/t4.png"), {x:341, y:210,});
-	story.sprite(require("@/images/t5.png"), {x:234, y:319,});
-	story.sprite(require("@/images/t6.png"), {x:300, y:346,});
-	story.sprite(require("@/images/t7.png"), {x:353, y:321,});
-	story.sprite(require("@/images/t8.png"), {x:422, y:289,});
-	story.sprite(require("@/images/t9.png"), {x:507, y:293,});
+let title1 = story.sprite(require("@/images/t1.png"), {x:134, y:220, alpha:0, scale:{x:0, y:1}})
+	.action({alpha:1, onComplete:e=>{
+		title1.act({scale:{x:1, y:1}}, .5);
+	}}, 0.8, 0);
+	// title1.anchor.x = .5;  
+	// title1.anchor.y = .5;
+let title15 = story.sprite(require("@/images/t2.png"), {x:205, y:226, alpha:1, delay:.5, scale:{x:0, y:1}})
+	.action({onComplete:e=>{
+		title15.act({scale:{x:1, y:1}, delay:1}, .5);
+	}}, 0.8, 0);
+let title8 = story.sprite(require("@/images/t3.png"), {x:265, y:203, alpha:1, delay:.5, scale:{x:0, y:1}})
+	.action({onComplete:e=>{
+		title8.act({scale:{x:1, y:1}, delay:1.5}, .5);
+	}}, 0.8, 0);
+let title2 = story.sprite(require("@/images/t4.png"), {x:341, y:210, alpha:1, delay:.5, scale:{x:0, y:1}})
+	.action({onComplete:e=>{
+		title2.act({scale:{x:1, y:1}, delay:2}, .5);
+	}}, 0.8, 0);
+let title3 = story.sprite(require("@/images/t5.png"), {x:234, y:319, alpha:1, delay:.5, scale:{x:0, y:1}})
+	.action({onComplete:e=>{
+		title3.act({scale:{x:1, y:1}, delay:.5}, .5);
+	}}, 0.8, 0);
+let title4 = story.sprite(require("@/images/t6.png"), {x:300, y:346, alpha:1, delay:.5, scale:{x:0, y:1}})
+	.action({onComplete:e=>{
+		title4.act({scale:{x:1, y:1}, delay:1}, .5);
+	}}, 0.8, 0);
+let title5 = story.sprite(require("@/images/t7.png"), {x:353, y:321, alpha:1, delay:.5, scale:{x:0, y:1}})
+	.action({onComplete:e=>{
+		title5.act({scale:{x:1, y:1}, delay:1.5}, .5);
+	}}, 0.8, 0);
+let title6 = story.sprite(require("@/images/t8.png"), {x:422, y:289, alpha:1, delay:.5, scale:{x:0, y:1}})
+	.action({onComplete:e=>{
+		title6.act({scale:{x:1, y:1}, delay:2}, .5);
+	}}, 0.8, 0);
+let title7 = story.sprite(require("@/images/t9.png"), {x:507, y:293, alpha:1, delay:.5, scale:{x:0, y:1}})
+	.action({onComplete:e=>{
+		title7.act({scale:{x:1, y:1}, delay:2.5}, .5);
+	}}, 0.8, 0);
 
-	story.sprite(require("@/images/t10.png"), {x:132, y:420,});
-	story.sprite(require("@/images/t11.png"), {x:197, y:431,});
-	story.sprite(require("@/images/2021.png"), {x:248, y:420,});
-	story.sprite(require("@/images/t12.png"), {x:464, y:434,});
-	story.sprite(require("@/images/t13.png"), {x:512, y:413,});
-	story.sprite(require("@/images/t14.png"), {x:572, y:429,});
+let title9 = story.sprite(require("@/images/t10.png"), {x:132, y:420, alpha:1, delay:.5, scale:{x:0, y:1}})
+	.action({onComplete:e=>{
+		title9.act({scale:{x:1, y:1},}, .5);
+	}}, 0.8, 0);
+let title10 = story.sprite(require("@/images/t11.png"), {x:197, y:431, alpha:1, delay:.5, scale:{x:0, y:1}})
+	.action({onComplete:e=>{
+		title10.act({scale:{x:1, y:1}, delay:.5}, .5);
+	}}, 0.8, 0);
+let title11 = story.sprite(require("@/images/2021.png"), {x:248, y:420, alpha:1, delay:.5, scale:{x:0, y:1}})
+	.action({onComplete:e=>{
+		title11.act({scale:{x:1, y:1}, delay:1.5}, .5);
+	}}, 0.8, 0);
+let title12 = story.sprite(require("@/images/t12.png"), {x:464, y:434, alpha:1, delay:.5, scale:{x:0, y:1}})
+	.action({onComplete:e=>{
+		title12.act({scale:{x:1, y:1}, delay:2}, .5);
+	}}, 0.8, 0);
+let title13 = story.sprite(require("@/images/t13.png"), {x:512, y:413, alpha:1, delay:.5, scale:{x:0, y:1}})
+	.action({onComplete:e=>{
+		title13.act({scale:{x:1, y:1}, delay:2.5}, .5);
+	}}, 0.8, 0);
+let title14 = story.sprite(require("@/images/t14.png"), {x:572, y:429, alpha:1, delay:.5, scale:{x:0, y:1}})
+	.action({onComplete:e=>{
+		title14.act({scale:{x:1, y:1}, delay:3}, .5);
+	}}, 0.8, 0);
 
-// let line = story.sprite(require("@/images/line.png"), {x:40, y:200,});
-let lineCont = story.chapter({x:68, y:362, width:589, height:589});
+	let lineCont = story.chapter({x:68, y:362, width:589, height:589});
 	let liberateText = lineCont.sprite(require("@/images/line.png"));
 	
-	let lineMask = lineCont.graphic({scale:{x:1, y:0}}).action({scale:{x:1,y:1}}, 2,0);
+	let lineMask = lineCont.graphic({scale:{x:1, y:0}})
+	.action({onComplete:e=>{
+		lineMask.act({scale:{x:1, y:1}, delay:1}, 1.2);
+	}}, 0.8, 0);
+	// .action({scale:{x:1,y:1}}, 2,0);
 		lineMask.lineStyle(0);
 		lineMask.beginFill(0);
 		lineMask.drawRect(0,0,589,589);
@@ -313,24 +365,38 @@ textTitle5.on('pointerdown', async()=>{
 });
 
 	// test
-	var graphic = story.graphic({x:40, y:540}).action({x: 0,y:400, onComplete:e=>{
-		graphic.act({x:-10, y:600, delay:.3}, 1.2);
-	}}, 0.8, 0);
-	graphic.beginFill(0xDE3249);
-	graphic.drawRect(50, 50, 100, 100);
-	graphic.endFill();
+	// var graphic = story.graphic({x:40, y:540}).action({x: 0,y:400,scale:{x:1.3, y:1.5}, onComplete:e=>{
+	// 	graphic.act({scale:{x:1.7, y:.5}, delay:.3}, 1.2);
+	// }}, 0.8, 0);
+	// graphic.beginFill(0xDE3249);
+	// graphic.drawRect(50, 50, 100, 100);
+	// graphic.endFill();
 
-let end = story.sprite(require("@/images/scroll_21.png"),{x:0, y:indexHeight + 9600,}).actionByStep({x:0,  y:indexHeight + 9600 - 300}, 500, indexHeight + 9600 - story.viewLength/2)
+let cloundPubu1 = story.sprite(require("@/images/yun_pubu1.png"), {x:desiginwidth-324, y:indexHeight + 3800,}).actionByStep({x:desiginwidth-324 +100, y:indexHeight + 3800-100}, 500, indexHeight + 3800- story.viewLength/2);
+
+let end = story.sprite(require("@/images/scroll_21.png"),{x:0, y:indexHeight + 9600,}).actionByStep({x:0,  y:indexHeight + 9600 - 100}, 500, indexHeight + 9600 - story.viewLength/2)
 let guodu = story.sprite(require("@/images/scroll_19.png"),{x:0, y:indexHeight + 7500,}).actionByStep({x:0,  y:indexHeight + 7500 - 100}, 500, indexHeight + 7500 - story.viewLength/2)
 let zhulin = story.sprite(require("@/images/scroll_18.png"),{x:0, y:indexHeight + 6500,}).actionByStep({x:0,  y:indexHeight + 6500 - 100}, 500, indexHeight + 6500 - story.viewLength/2)
 let ri = story.sprite(require("@/images/scroll_20.png"),{x:0, y:indexHeight + 8600,}).actionByStep({x:0,  y:indexHeight + 8600 - 100}, 500, indexHeight + 8600 - story.viewLength/2)
 let lanche = story.sprite(require("@/images/scroll_17.png"),{x:0, y:indexHeight + 5300,}).actionByStep({x:0,  y:indexHeight + 5300 - 100}, 500, indexHeight + 5300 - story.viewLength/2)
 let piaoliu = story.sprite(require("@/images/scroll_16.png"),{x:0, y:indexHeight + 4200,}).actionByStep({x:0,  y:indexHeight + 4200 - 100}, 500, indexHeight + 4200 - story.viewLength/2)
 let pubu = story.sprite(require("@/images/scroll_14.png"),{x:0, y:indexHeight + 3800,}).actionByStep({x:0,  y:indexHeight + 3800 - 50}, 100, indexHeight + 3800 - story.viewLength/2)
-let pubu2 = story.sprite(require("@/images/scroll_15.png"),{x:0, y:indexHeight + 4400,}).actionByStep({x:0,  y:indexHeight + 4400 - 200}, 500, indexHeight + 4400 - story.viewLength/2)
+let pubu2 = story.sprite(require("@/images/scroll_15.png"),{x:0, y:indexHeight + 4400,}).actionByStep({x:0,  y:indexHeight + 4400 - 150}, 500, indexHeight + 4400 - story.viewLength/2)
+let cloundPubu = story.sprite(require("@/images/yun_pubu.png"), {x:0, y:indexHeight + 3600,}).actionByStep({x:-100, y:indexHeight + 3600-100}, 500, indexHeight + 3600- story.viewLength/2);
+
+let cloundPubu2 = story.sprite(require("@/images/yun_pubu2.png"), {x:desiginwidth-270,y:indexHeight + 4100,}).actionByStep({x:desiginwidth-270 +100, y:indexHeight + 4100-100}, 1000, indexHeight + 4100- story.viewLength/2);
+let cloundPubu3 = story.sprite(require("@/images/yun_pubu3.png"), {x:0, y:indexHeight + 4000,}).actionByStep({x:-100, y:indexHeight + 4000-100}, 1000, indexHeight + 4000- story.viewLength/2);
+let cloundPubu4 = story.sprite(require("@/images/yun_pubu4.png"), {x:desiginwidth-535, y:indexHeight + 3700,}).actionByStep({x:desiginwidth-535 +100, y:indexHeight + 3700-100}, 1000, indexHeight + 3700- story.viewLength/2);
 
 
+let cloundpiaoliao = story.sprite(require("@/images/yun_piaoliao.png"), {x:0, y:indexHeight + 4500,}).actionByStep({x:0, y:indexHeight + 4500-100}, 1000, indexHeight + 4500- story.viewLength/2);
+let cloundpiaoliao1 = story.sprite(require("@/images/yun_piaoliao1.png"), {x:desiginwidth-504, y:indexHeight + 4700,}).actionByStep({x:desiginwidth-519 +100, y:indexHeight + 4700-100}, 1000, indexHeight + 4700- story.viewLength/2);
 
+let cloundzhulin = story.sprite(require("@/images/yun_zhulin.png"), {x:0, y:indexHeight + 6500,}).actionByStep({x:0, y:indexHeight + 6500-100}, 1000, indexHeight + 6500- story.viewLength/2);
+let cloundzhulin1 = story.sprite(require("@/images/yun_zhulin1.png"), {x:desiginwidth-519, y:indexHeight + 6700,}).actionByStep({x:desiginwidth-504 +100, y:indexHeight + 6700-100}, 1000, indexHeight + 6700- story.viewLength/2);
+let cloundzhulin2 = story.sprite(require("@/images/yun_zhulin2.png"), {x:0, y:indexHeight + 7500,}).actionByStep({x:0, y:indexHeight + 7000-100}, 1000, indexHeight + 7000- story.viewLength/2);
+
+let clounddi = story.sprite(require("@/images/yundi.png"), {x:0, y:indexHeight + 8900,}).actionByStep({x:0, y:indexHeight + 8900}, 500, indexHeight + 9600- story.viewLength/2);
 
 story.loader.onProgress.add(loader => $("#percent").html((loader.progress|0) + "%"))
 story.loader.load(loader => {
