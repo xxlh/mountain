@@ -231,7 +231,7 @@ div>img {
     position: absolute;
 	width:7rem;
     top:2rem;
-    left: 1rem;
+    left: 0rem;
   }
   .show-pic{
     display: none;
@@ -248,7 +248,8 @@ div>img {
     top: 3%;
     left: 50%;
 	width: 6rem;
-	margin-left: -3rem;
+    margin-left: -3rem;
+    opacity: 1;
 }
   #messBox{
 	position: absolute;

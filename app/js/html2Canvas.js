@@ -55,22 +55,15 @@ class app{
 			useCORS: true,//开启跨域配置
 		};
 		html2canvas(shareContent, opts).then(function (canvas) {
-			$(".show-pic").show(); 
 			let image = new Image();
 			image.src = canvas.toDataURL("image/png");
 			$("#show").append(image); 
-			$("#tips").hide();
-			$(".page02 .btn").hide();
-			$(".photobg-change").show();
-			$(".reupload-btn").show();
-			console.log(browser);
-			if(browser.weixin || window.navigator.userAgent.toLowerCase().match(/bytelocale/i) == 'bytelocale'){
+			if(browser.weixin){
 				$(".save-tip").show();
 			}else{
 				$(".weibo").show();
 			}
 			
-			$(".psum").show();
 			let data= {};
 			data.imgurl = canvas.toDataURL("image/png");
 			Ajax.post("https://www.appmn.cn/project2020/datangdichan/upload_pictures.php",data,function(){
