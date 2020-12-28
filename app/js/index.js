@@ -249,7 +249,7 @@ snows.map((item)=>{
 
 // 天下第一牛山 文字
 let  textTitle1 = story.chapter({x:0, y:indexHeight + 600, alpha:0 }).actionByStep({y:indexHeight + 570, alpha:1}, 100, indexHeight + 650 - story.viewLength/2);
-let icon = textTitle1.sprite(require("@/images/icon.png"),{x:110, y:20, scale:{x:1.2,y:1.2}, alpha:1}).action({ yoyo: true, scale:{x:0.6,y:0.6}, alpha:0.6, repeat:-1, ease:Linear.easeIn,}, 2, indexHeight + 550 - story.viewLength);
+let icon = textTitle1.sprite(require("@/images/icon.png"),{x:90, y:20, scale:{x:1.2,y:1.2}, alpha:1}).action({ yoyo: true, scale:{x:0.6,y:0.6}, alpha:0.6, repeat:-1, ease:Linear.easeIn,}, 2, indexHeight + 550 - story.viewLength);
 	icon.anchor.x = 0.5;
 	icon.anchor.y = 0.5;
 	textTitle1.sprite(require("@/images/text1.png"),{x:130, y:0});
@@ -266,7 +266,7 @@ textTitle1.on('pointerdown', async()=>{
 	let initInfo = await window._initInfo;
 	console.log(initInfo)
 	$(".inforBox .user_name").html(initInfo.motion_type)
-	inforBoxShow(require("../images/3.jpg"));
+	inforBoxShow(require("../images/1.jpg"));
 });
 
 
@@ -289,7 +289,7 @@ textTitle2.on('pointerdown', async()=>{
 	let initInfo = await window._initInfo;
 	console.log(initInfo)
 	$(".inforBox .user_name").html(initInfo.motion_type)
-	inforBoxShow(require("../images/3.jpg"));
+	inforBoxShow(require("../images/wusong.jpg"));
 });
 
 // 苔藓海 文字
@@ -311,7 +311,7 @@ textTitle3.on('pointerdown', async()=>{
 	let initInfo = await window._initInfo;
 	console.log(initInfo)
 	$(".inforBox .user_name").html(initInfo.motion_type)
-	inforBoxShow(require("../images/3.jpg"));
+	inforBoxShow(require("../images/taixian.jpg"));
 });
 
 
@@ -346,7 +346,7 @@ textTitle4.on('pointerdown', async()=>{
 	let initInfo = await window._initInfo;
 	console.log(initInfo)
 	$(".inforBox .user_name").html(initInfo.motion_type)
-	inforBoxShow(require("../images/3.jpg"));
+	inforBoxShow(require("../images/tiankong.jpg"));
 });
 
 
@@ -369,7 +369,7 @@ textTitle5.on('pointerdown', async()=>{
 	let initInfo = await window._initInfo;
 	console.log(initInfo)
 	$(".inforBox .user_name").html(initInfo.motion_type)
-	inforBoxShow(require("../images/3.jpg"));
+	inforBoxShow(require("../images/zhandao.jpg"));
 });
 
 let cloundxixing = story.sprite(require("@/images/yun_piaoliao.png"), {x:0, y:indexHeight + 2600,}).actionByStep({x:-200, y:indexHeight + 2600-100}, 1000, indexHeight + 2600- story.viewLength/2);
@@ -445,7 +445,7 @@ textTitle6.on('pointerdown', async()=>{
 	let initInfo = await window._initInfo;
 	console.log(initInfo)
 	$(".inforBox .user_name").html(initInfo.motion_type)
-	inforBoxShow(require("../images/3.jpg"));
+	inforBoxShow(require("../images/pubu.jpg"));
 });
 
 // 漂流 文字
@@ -467,7 +467,7 @@ textTitle7.on('pointerdown', async()=>{
 	let initInfo = await window._initInfo;
 	console.log(initInfo)
 	$(".inforBox .user_name").html(initInfo.motion_type)
-	inforBoxShow(require("../images/3.jpg"));
+	inforBoxShow(require("../images/piaoliu.jpg"));
 });
 
 // 索道 文字
@@ -489,15 +489,15 @@ textTitle8.on('pointerdown', async()=>{
 	let initInfo = await window._initInfo;
 	console.log(initInfo)
 	$(".inforBox .user_name").html(initInfo.motion_type)
-	inforBoxShow(require("../images/3.jpg"));
+	inforBoxShow(require("../images/lanche.jpg"));
 });
 
 
 // 竹林 文字
 let  textTitle9 = story.chapter({x:100, y:indexHeight + 7400}).actionByStep({y:indexHeight + 7400-50 }, 100, indexHeight + 7400 - story.viewLength/2);
-let icon9 = textTitle9.sprite(require("@/images/icon.png"),{x:160, y:30, scale:{x:1.2,y:1.2}, alpha:1}).action({ yoyo: true, scale:{x:0.6,y:0.6}, alpha:0.6, repeat:-1, ease:Linear.easeIn,}, 2, indexHeight + 550 - story.viewLength);
-	icon9.anchor.x = 0.5;
-	icon9.anchor.y = 0.5;
+// let icon9 = textTitle9.sprite(require("@/images/icon.png"),{x:160, y:30, scale:{x:1.2,y:1.2}, alpha:1}).action({ yoyo: true, scale:{x:0.6,y:0.6}, alpha:0.6, repeat:-1, ease:Linear.easeIn,}, 2, indexHeight + 550 - story.viewLength);
+// 	icon9.anchor.x = 0.5;
+// 	icon9.anchor.y = 0.5;
 	textTitle9.sprite(require("@/images/text10.png"),{x:180, y:0});
 
 let  textDes9 = story.chapter({x:100, y:indexHeight + 7400 + 50, alpha:0 }).actionByStep({y:indexHeight + 7400 + 50-50, alpha:1}, 100, indexHeight + 7400 + 50 - story.viewLength/2);
@@ -506,14 +506,14 @@ let leaf9 = textDes9.sprite(require("@/images/leaf1.png"),{x:520, y:150, rotatio
 	leaf9.anchor.y = 1;
 	textDes9.sprite(require("@/images/desc10.png"),{x:190, y:0});
 
-textTitle9.interactive = true;
-textTitle9.buttonMode = true;
-textTitle9.on('pointerdown', async()=>{
-	let initInfo = await window._initInfo;
-	console.log(initInfo)
-	$(".inforBox .user_name").html(initInfo.motion_type)
-	inforBoxShow(require("../images/3.jpg"));
-});
+// textTitle9.interactive = true;
+// textTitle9.buttonMode = true;
+// textTitle9.on('pointerdown', async()=>{
+// 	let initInfo = await window._initInfo;
+// 	console.log(initInfo)
+// 	$(".inforBox .user_name").html(initInfo.motion_type)
+// 	inforBoxShow(require("../images/zulin.jpg"));
+// });
 
 
 // 日出 文字
@@ -535,7 +535,7 @@ textTitle10.on('pointerdown', async()=>{
 	let initInfo = await window._initInfo;
 	console.log(initInfo)
 	$(".inforBox .user_name").html(initInfo.motion_type)
-	inforBoxShow(require("../images/3.jpg"));
+	inforBoxShow(require("../images/richu.jpg"));
 });
 
 
@@ -561,6 +561,7 @@ story.loader.load(loader => {
 function clickOp(){
 	$('.inforBox .close').on('click',function(){
 		$('.inforBox').hide();
+		$("#show").empty();
 		story.play();
 	});
 }
@@ -571,8 +572,8 @@ function  inforBoxShow(picurl){
 	img.src = picurl;
 	img.onload = function(){
 		// if(img.complete)
-		$("#show").empty();
-		app.setListener();
+		// $("#show").empty();
+		app.setListener('#poster');
 	};
 	story.stop();
 };

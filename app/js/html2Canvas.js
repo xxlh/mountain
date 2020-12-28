@@ -10,8 +10,8 @@ let height = document.documentElement.clientHeight;
 
 class app{
 	//设置监听事件
-	setListener() {
-		this.htmlToCanvas(document.querySelector('#poster'));
+	setListener(selector) {
+		this.htmlToCanvas(document.querySelector(selector));
 	};
 	//获取像素密度
 	getPixelRatio(context) {
