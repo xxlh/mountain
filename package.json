@@ -51,7 +51,7 @@
     "canvas2image": "^1.0.5",
     "css3transform": "^1.2.1",
     "document-ready": "^2.0.2",
-    "html2canvas": "^1.0.0-rc.4",
+    "html2canvas": "1.0.0-rc.4",
     "imgpreload": "0.0.3",
     "jquery": "^3.4.1",
     "jsencrypt": "^3.0.0-rc.1",
