@@ -12,8 +12,8 @@ import AjaxData from "@lib/AjaxData"
 // 清除html缓存
 // if(window.location.search.indexOf('clearCache=')==-1)
 // 	location.href = location.href + (location.href.indexOf('?')!=-1?'&':'?') + 'clearCache='+Math.random();
-Ajax.post("http://it.mn.sina.com/project1/dreamtrain70/browse.php");
-let Data = new AjaxData('https://www.appmn.cn/project2020/datangdichan/');
+// Ajax.post("http://it.mn.sina.com/project1/dreamtrain70/browse.php");
+let Data = new AjaxData('https://www.appmn.cn/project2020/shiniushan/');
 	window._initInfo = Data.get('browse.php');
 	
 // REM布局

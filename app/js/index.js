@@ -173,6 +173,12 @@ let title14 = story.sprite(require("@/images/t14.png"), {x:572, y:429, alpha:1, 
 		title14.act({scale:{x:1, y:1}, delay:3}, .5);
 	}}, 0.8, 0);
 
+
+let ltitle = story.sprite(require("@/images/title.png"), {x:(desiginwidth- 360)/2, y:729, alpha:0, delay:.5})
+	.action({onComplete:e=>{
+		ltitle.act({alpha: 1, delay:1.3}, 1.5);
+	}}, 0.8, 0);
+
 	let lineCont = story.chapter({x:68, y:362, width:589, height:589});
 	let liberateText = lineCont.sprite(require("@/images/line.png"));
 	
@@ -199,6 +205,11 @@ let clound4 = story.sprite(require("@/images/yun4.png"), {x:desiginwidth-420, y:
 let mountain3 = story.sprite(require("@/images/scroll_3.png"), {x:0, y:indexHeight + 900,}).actionByStep({y:indexHeight + 900 - 100}, 200, indexHeight + 1150 - story.viewLength/2);
 let clound2 = story.sprite(require("@/images/yun2.png"), {x:0, y:indexHeight + 900,}).actionByStep({x:-300}, 500, indexHeight + 900- story.viewLength/2);
 
+let tip = story.sprite(require("@/images/tip.png"), {x:(desiginwidth- 450)/2, y:story.viewLength-200, alpha:0, delay:.5})
+	.action({alpha: 1,y:story.viewLength-150, repeat:2, yoyo:true, delay:2,onComplete:e=>{
+		tip.act({alpha: 0})
+	}}, 1, 0);
+
 
 // 石牛山雾凇
 let wushu1 = story.sprite(require("@/images/scroll_4.png"),{x:0, y:indexHeight + 1150,}).actionByStep({x:0,  y:indexHeight + 1150 - 100}, 500, indexHeight + 1150 - story.viewLength/2)
@@ -211,7 +222,7 @@ let wushu1 = story.sprite(require("@/images/scroll_4.png"),{x:0, y:indexHeight +
 	
 let wushu2 = story.sprite(require("@/images/scroll_5.png"),{x:0, y:indexHeight + 1250,}).actionByStep({x:0,  y:indexHeight + 1250 - 100}, 500, indexHeight + 1250 - story.viewLength/2)
 let clound5 = story.sprite(require("@/images/yun5.png"), {x:0, y:indexHeight + 1600,}).actionByStep({y:indexHeight + 1600 - 30}, 300, indexHeight + 1600 - story.viewLength/2)
-let wushuLeft = story.sprite(require("@/images/scroll_6.png"), {x:0, y:indexHeight + 1600,}).actionByStep({x:-100, y:indexHeight + 1600 - 30}, 400, indexHeight + 1600 - story.viewLength/2)
+let wushuLeft = story.sprite(require("@/images/scroll_6.png"), {x:0, y:indexHeight + 1600,}).actionByStep({x:-150, y:indexHeight + 1600 - 30}, 400, indexHeight + 1600 - story.viewLength/2)
 let wushuRight = story.sprite(require("@/images/scroll_7.png"),{x:desiginwidth-665, y:indexHeight + 1600,}).actionByStep({x:200,  y:indexHeight + 1600 - 80}, 500, indexHeight + 1600 - story.viewLength/2)
 let clound6 = story.sprite(require("@/images/yun6.png"), {x:100, y:indexHeight + 1500}).actionByStep({x:200, }, 300, indexHeight + 1500 - story.viewLength/2)
 let clound7 = story.sprite(require("@/images/yun7.png"), {x:0, y:indexHeight + 1650}).actionByStep({y:indexHeight + 1650-20, }, 300, indexHeight + 1650 - story.viewLength/2)
@@ -361,15 +372,8 @@ textTitle5.on('pointerdown', async()=>{
 	inforBoxShow(require("../images/3.jpg"));
 });
 
-	// test
-	// var graphic = story.graphic({x:40, y:540}).action({x: 0,y:400,scale:{x:1.3, y:1.5}, onComplete:e=>{
-	// 	graphic.act({scale:{x:1.7, y:.5}, delay:.3}, 1.2);
-	// }}, 0.8, 0);
-	// graphic.beginFill(0xDE3249);
-	// graphic.drawRect(50, 50, 100, 100);
-	// graphic.endFill();
-
-// let cloundPubu1 = story.sprite(require("@/images/yun_pubu1.png"), {x:desiginwidth-324, y:indexHeight + 3800,}).actionByStep({x:desiginwidth-324 +100, y:indexHeight + 3800-100}, 500, indexHeight + 3800- story.viewLength/2);
+let cloundxixing = story.sprite(require("@/images/yun_piaoliao.png"), {x:0, y:indexHeight + 2600,}).actionByStep({x:-200, y:indexHeight + 2600-100}, 1000, indexHeight + 2600- story.viewLength/2);
+let cloundxixing1 = story.sprite(require("@/images/yun_piaoliao1.png"), {x:desiginwidth-519, y:indexHeight + 2600,}).actionByStep({x:desiginwidth-519 +200, y:indexHeight + 2600-100}, 1000, indexHeight + 2600- story.viewLength/2);
 
 let end = story.sprite(require("@/images/scroll_21.png"),{x:0, y:indexHeight + 9600,}).actionByStep({x:0,  y:indexHeight + 9600 - 100}, 500, indexHeight + 9600 - story.viewLength/2)
 let guodu = story.sprite(require("@/images/scroll_19.png"),{x:0, y:indexHeight + 7500,}).actionByStep({x:0,  y:indexHeight + 7500 - 100}, 500, indexHeight + 7500 - story.viewLength/2)
@@ -413,7 +417,7 @@ let cloundPubu3 = story.sprite(require("@/images/yun_pubu3.png"), {x:0, y:indexH
 let cloundPubu4 = story.sprite(require("@/images/yun_pubu4.png"), {x:desiginwidth-535, y:indexHeight + 3700,}).actionByStep({x:desiginwidth-535 +200, y:indexHeight + 3700-100}, 1000, indexHeight + 3700- story.viewLength/2);
 
 
-let cloundpiaoliao = story.sprite(require("@/images/yun_piaoliao.png"), {x:0, y:indexHeight + 4500,}).actionByStep({x:0, y:indexHeight + 4500-200}, 1000, indexHeight + 4500- story.viewLength/2);
+let cloundpiaoliao = story.sprite(require("@/images/yun_piaoliao.png"), {x:0, y:indexHeight + 4500,}).actionByStep({x:-200, y:indexHeight + 4500-100}, 1000, indexHeight + 4500- story.viewLength/2);
 let cloundpiaoliao1 = story.sprite(require("@/images/yun_piaoliao1.png"), {x:desiginwidth-519, y:indexHeight + 4700,}).actionByStep({x:desiginwidth-519 +200, y:indexHeight + 4700-100}, 1000, indexHeight + 4700- story.viewLength/2);
 
 let cloundzhulin = story.sprite(require("@/images/yun_zhulin.png"), {x:0, y:indexHeight + 6500,}).actionByStep({x:-200, y:indexHeight + 6500-100}, 1000, indexHeight + 6500- story.viewLength/2);
@@ -536,14 +540,12 @@ textTitle10.on('pointerdown', async()=>{
 
 
 // 话题 文字
-let  textTitle12 = story.sprite(require("@/images/text12.png"), {x:(desiginwidth-514)/2, y:indexHeight + 10600}).actionByStep({y:indexHeight + 10600-50 }, 100, indexHeight + 10600 - story.viewLength/2);
+let  textTitle12 = story.sprite(require("@/images/text12.png"), {x:(desiginwidth-514), y:indexHeight + 10600, pivot:{x:(desiginwidth-514)/2, y:95/2},  scale:{x:1,y:1}}).action({scale:{x:1.1,y:1.1},repeat:-1,yoyo:true }, 2, indexHeight + 10600 - story.viewLength/2);
+
 textTitle12.interactive = true;
 textTitle12.buttonMode = true;
 textTitle12.on('pointerdown', async()=>{
-	let initInfo = await window._initInfo;
-	console.log(initInfo)
-	$(".inforBox .user_name").html(initInfo.motion_type)
-	inforBoxShow(require("../images/3.jpg"));
+	location.href = "http://s.weibo.com/weibo?q=%23%E5%8D%83%E4%B8%87%E7%B2%89%E4%B8%9D%E7%89%9B%E5%B1%B1%E8%B7%A8%E7%89%9B%E5%B9%B4%23";
 });
 
 story.loader.onProgress.add(loader => $("#percent").html((loader.progress|0) + "%"))
@@ -559,7 +561,7 @@ story.loader.load(loader => {
 function clickOp(){
 	$('.inforBox .close').on('click',function(){
 		$('.inforBox').hide();
-		// story.play();
+		story.play();
 	});
 }
 function  inforBoxShow(picurl){
