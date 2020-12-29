@@ -205,37 +205,63 @@ div>img {
     left: 0;
     top:0;
 }
-.close {
+.inforBox .close {
     position: absolute;
-    width: 1.5rem;
-    height: 1rem;
-    border-radius: 50px;
-    background: #92908e;
-    font-size: 16px;
-    line-height: 1rem;
-    color: #fff;
-    position: absolute;
-    z-index: 1001;
-    right: 5%;
-    top: 10%;
+    bottom: 0.5rem;
+    left: 50%;
+    margin-left: -1.5rem;
+    width: 3rem;
+    border: 0.02rem solid #fff;
     text-align: center;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-transform: translateZ(100px);
-    transform: translateZ(100px);
-    display: block;
+    line-height: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 0.35rem;
   }
   .infor .pic{
-    position: relative;
-	width:7rem;
-    margin: 1rem auto 0;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+	width: 6rem;
+    margin-left: -3rem;
     /* opacity: 0; */
   }
   .infor .user_name{
     position: absolute;
-	width:7rem;
-    top:2rem;
-    left: 0rem;
+	width: 4rem;
+    font-size: .3rem;
+    overflow: hidden;
   }
+ 
+  .user_head{
+      width: 1.09rem;
+      height: 1.09rem;
+      background-image: url("../images/head.png");
+      background-size: 100% 100%;
+      position: absolute;
+  }
+
+    .infor .user_name.left{
+        left: 1.9rem;
+        text-align: left;
+        top: 1.5rem;
+        color: #000;
+    }
+    .infor .user_head.left{
+        left: 0.6rem;
+        top: 1.2rem;
+    }
+    .infor .user_name.right{
+        right: 1.8rem;
+        text-align: right;
+        top: 1.8rem;
+        color: #fff;
+    }
+    .infor .user_head.right{
+        right: 0.6rem;
+        top: 1.4rem;
+    }
   .show-pic{
     display: none;
     position: absolute;
@@ -250,9 +276,8 @@ div>img {
     position: absolute;
     top: 3%;
     left: 50%;
-	width: 7rem;
-    margin-left: -3.5rem;
-    opacity: 1;
+	width: 6rem;
+    margin-left: -3rem;
 }
   #messBox{
 	position: absolute;
@@ -271,7 +296,7 @@ div>img {
     left: 0;
     top:0;
 }
-.close {
+/* .close {
     position: absolute;
     width: 1.5rem;
     height: 1rem;
@@ -289,7 +314,7 @@ div>img {
     -webkit-transform: translateZ(100px);
     transform: translateZ(100px);
     display: block;
-  }
+  } */
   .mess .pic{
     position: absolute;
     width:8.52rem;

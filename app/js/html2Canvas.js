@@ -58,18 +58,11 @@ class app{
 			let image = new Image();
 			image.src = canvas.toDataURL("image/png");
 			$("#show").append(image); 
-			if(browser.weixin){
-				$(".save-tip").show();
-			}else{
-				$(".weibo").show();
-			}
-			
-			let data= {};
-			data.imgurl = canvas.toDataURL("image/png");
-			Ajax.post("https://www.appmn.cn/project2020/datangdichan/upload_pictures.php",data,function(){
-
-			})
-			
+			// if(browser.weixin){
+			// 	$(".save-tip").show();
+			// }else{
+			// 	$(".weibo").show();
+			// }
 		});
 	}
 };
