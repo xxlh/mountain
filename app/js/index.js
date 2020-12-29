@@ -523,18 +523,7 @@ function clickOp(){
 }
 function  inforBoxShow(picurl, direction, position=0){
 	$(".inforBox .userInfo").removeClass("p1 p2 p3 p4 p5 p6 p7 p8 p9");
-	// if(direction=="left"){
-		$(".inforBox .userInfo").addClass(direction);
-	// }else{
-	// 	$(".inforBox .userInfo").addClass("right");
-	// }
-	// if( position == 1) {
-	// 	$(".inforBox .user_name").css("color","#fff")
-	// }else if( position == 2){
-	// 	$(".inforBox .user_name").css({"color":"#fff","top": "2.4rem","left":"1.8rem"})
-	// 	$(".inforBox .user_head").css({"top": "2.1rem"})
-	// }
-
+	$(".inforBox .userInfo").addClass(direction);
 	$(".inforBox").show();
 	$(".inforBox .picurl").attr("src",picurl);
 	var img = new Image();
@@ -543,7 +532,7 @@ function  inforBoxShow(picurl, direction, position=0){
 		// if(img.complete)
 		// $("#show").empty();
 		// setTimeout(()=>{
-			// app.setListener('#poster');
+			app.setListener('#poster');
 		// },1000)
 	};
 	story.stop();

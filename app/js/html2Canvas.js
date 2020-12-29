@@ -59,9 +59,9 @@ class app{
 			image.src = canvas.toDataURL("image/png");
 			$("#show").append(image); 
 			// if(browser.weixin){
-			// 	$(".save-tip").show();
+			// 	$(".pic-des").show();
 			// }else{
-			// 	$(".weibo").show();
+			// 	$(".pic-des").show();
 			// }
 		});
 	}
