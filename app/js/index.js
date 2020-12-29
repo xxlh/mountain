@@ -293,7 +293,7 @@ textTitle3.on('pointerdown', ()=>{
 let boli4 = story.sprite(require("@/images/scroll_13.png"),{x:0, y:indexHeight + 3500,}).actionByStep({x:0,  y:indexHeight + 3500 - 150}, story.viewLength, indexHeight + 3500 - story.viewLength)
 let boli3 = story.sprite(require("@/images/scroll_121.png"),{x:0, y:indexHeight + 3150,}).actionByStep({x:0,  y:indexHeight + 3150 - 200}, story.viewLength, indexHeight + 3150 - story.viewLength)
 let boli2 = story.sprite(require("@/images/scroll_11.png"),{x:0, y:indexHeight + 3050,}).actionByStep({x:0,  y:indexHeight + 3050 - 200}, story.viewLength, indexHeight + 3050 - story.viewLength)
-let boli1 = story.sprite(require("@/images/scroll_10.png"),{x:0, y:indexHeight + 2850,}).actionByStep({x:0,  y:indexHeight + 2850 - 400}, story.viewLength, indexHeight + 2850-500 - story.viewLength)
+let boli1 = story.sprite(require("@/images/scroll_101.png"),{x:0, y:indexHeight + 2850,}).actionByStep({x:0,  y:indexHeight + 2850 - 400}, story.viewLength, indexHeight + 2850-500 - story.viewLength)
 let tree2 = story.sprite(require("@/images/tree2.png"),{x:400, y:indexHeight + 3000,}).actionByStep({x:500,  y:indexHeight + 3000 - 200}, story.viewLength, indexHeight + 3000 - story.viewLength)
 let tree1 = story.sprite(require("@/images/tree1.png"),{x:-500, y:indexHeight + 2400,}).actionByStep({x:-400,  y:indexHeight + 2400 + 100}, story.viewLength, indexHeight + 2400 - story.viewLength)
 
@@ -344,8 +344,8 @@ let end = story.sprite(require("@/images/scroll_21.png"),{x:0, y:indexHeight + 9
 let guodu = story.sprite(require("@/images/scroll_19.png"),{x:0, y:indexHeight + 7500,}).actionByStep({x:0,  y:indexHeight + 7500 - 200}, story.viewLength, indexHeight + 7500 - story.viewLength)
 let zhulin = story.sprite(require("@/images/scroll_18.png"),{x:0, y:indexHeight + 6500,}).actionByStep({x:0,  y:indexHeight + 6500 - 200}, 500, indexHeight + 6500 - story.viewLength)
 let ri = story.sprite(require("@/images/scroll_20.png"),{x:0, y:indexHeight + 8600,}).actionByStep({x:0,  y:indexHeight + 8600 - 200}, story.viewLength, indexHeight + 8600 - story.viewLength)
-let lanche = story.sprite(require("@/images/scroll_17.png"),{x:0, y:indexHeight + 5300-100,}).actionByStep({x:0,  y:indexHeight + 5300-100 - 300}, story.viewLength, indexHeight + 5300-100 - story.viewLength)
-let piaoliu = story.sprite(require("@/images/scroll_16.png"),{x:0, y:indexHeight + 4200,}).actionByStep({x:0,  y:indexHeight + 4200 - 200}, story.viewLength, indexHeight + 4200 - story.viewLength)
+let lanche = story.sprite(require("@/images/scroll_171.png"),{x:0, y:indexHeight + 5600-100,}).actionByStep({x:0,  y:indexHeight + 5600-100 - 300}, story.viewLength, indexHeight + 5600-100 - story.viewLength)
+let piaoliu = story.sprite(require("@/images/scroll_161.png"),{x:0, y:indexHeight + 4400,}).actionByStep({x:0,  y:indexHeight + 4400 - 200}, story.viewLength, indexHeight + 4400 - story.viewLength)
 let pubu = story.sprite(require("@/images/scroll_14.png"),{x:0, y:indexHeight + 3800,}).actionByStep({x:0,  y:indexHeight + 3800 - 150}, story.viewLength, indexHeight + 3800 - story.viewLength)
 let pubu2 = story.sprite(require("@/images/scroll_15.png"),{x:0, y:indexHeight + 4400,}).actionByStep({x:0,  y:indexHeight + 4400 - 250}, story.viewLength, indexHeight + 4400 - story.viewLength)
 //星空飘落 
@@ -382,8 +382,8 @@ let cloundPubu3 = story.sprite(require("@/images/yun_pubu3.png"), {x:0, y:indexH
 let cloundPubu4 = story.sprite(require("@/images/yun_pubu4.png"), {x:desiginwidth-535, y:indexHeight + 3700,}).actionByStep({x:desiginwidth-535 +200, y:indexHeight + 3700-100}, 1000, indexHeight + 3700- story.viewLength/2);
 
 
-let cloundpiaoliao = story.sprite(require("@/images/yun_piaoliao.png"), {x:0, y:indexHeight + 4500,}).actionByStep({x:-200, y:indexHeight + 4500-200}, 1000, indexHeight + 4500- story.viewLength/2);
-let cloundpiaoliao1 = story.sprite(require("@/images/yun_piaoliao1.png"), {x:desiginwidth-519, y:indexHeight + 4600,}).actionByStep({x:desiginwidth-519+100, y:indexHeight + 4600-200}, 1000, indexHeight + 4600- story.viewLength/2);
+let cloundpiaoliao = story.sprite(require("@/images/yun_piaoliao.png"), {x:0, y:indexHeight + 4600,}).actionByStep({x:-200, y:indexHeight + 4600-200}, 1000, indexHeight + 4600- story.viewLength/2);
+let cloundpiaoliao1 = story.sprite(require("@/images/yun_piaoliao1.png"), {x:desiginwidth-519, y:indexHeight + 4700,}).actionByStep({x:desiginwidth-519+100, y:indexHeight + 4700-200}, 1000, indexHeight + 4700- story.viewLength/2);
 
 let cloundzhulin = story.sprite(require("@/images/yun_zhulin.png"), {x:0, y:indexHeight + 6300,}).actionByStep({x:-200, y:indexHeight + 6300-100}, 1000, indexHeight + 6300- story.viewLength/2);
 let cloundzhulin1 = story.sprite(require("@/images/yun_zhulin1.png"), {x:desiginwidth-504, y:indexHeight + 6500,}).actionByStep({x:desiginwidth-504 + 200, y:indexHeight + 6500-100}, 1000, indexHeight + 6500- story.viewLength/2);
@@ -411,13 +411,13 @@ textTitle6.on('pointerdown', ()=>{
 });
 
 // 漂流 文字
-let  textTitle7 = story.chapter({x:0, y:indexHeight + 5000}).actionByStep({y:indexHeight + 5000-50 }, 100, indexHeight + 5000 - story.viewLength/2);
+let  textTitle7 = story.chapter({x:0, y:indexHeight + 4900}).actionByStep({y:indexHeight + 4900-50 }, 100, indexHeight + 4900 - story.viewLength/2);
 let icon7 = textTitle7.sprite(require("@/images/icon.png"),{x:160, y:30, scale:{x:1,y:1}, alpha:1}).action({ yoyo: true, scale:{x:0.6,y:0.6}, alpha:0.6, repeat:-1, ease:Linear.easeIn,}, 2, indexHeight + 550 - story.viewLength);
 	icon7.anchor.x = 0.5;
 	icon7.anchor.y = 0.5;
 	textTitle7.sprite(require("@/images/text8.png"),{x:180, y:0});
 
-let  textDes7 = story.chapter({x:0, y:indexHeight + 5000 + 50, alpha:0 }).actionByStep({y:indexHeight + 5000 + 50-50, alpha:1}, 100, indexHeight + 5000 + 50 - story.viewLength/2);
+let  textDes7 = story.chapter({x:0, y:indexHeight + 4900 + 50, alpha:0 }).actionByStep({y:indexHeight + 4900 + 50-50, alpha:1}, 100, indexHeight + 4900 + 50 - story.viewLength/2);
 let leaf7 = textDes7.sprite(require("@/images/leaf1.png"),{x:420, y:40, rotation:-0.5}).action({ yoyo: true, rotation:0.5, repeat:-1, ease:Linear.easeIn,}, 3, indexHeight + 550 - story.viewLength);
 	leaf7.anchor.x = 0.5;
 	leaf7.anchor.y = 1;
@@ -430,14 +430,14 @@ textTitle7.on('pointerdown', ()=>{
 });
 
 // 索道 文字
-let  textTitle8 = story.chapter({x:340, y:indexHeight + 5700}).actionByStep({y:indexHeight + 5700-50 }, 100, indexHeight + 5700 - story.viewLength/2);
-let icon8 = textTitle8.sprite(require("@/images/icon.png"),{x:344, y:30, scale:{x:1,y:1}, alpha:1}).action({ yoyo: true, scale:{x:0.6,y:0.6}, alpha:0.6, repeat:-1, ease:Linear.easeIn,}, 2, indexHeight + 550 - story.viewLength);
+let  textTitle8 = story.chapter({x:150, y:indexHeight + 6200}).actionByStep({y:indexHeight + 6200-50 }, 100, indexHeight + 6200 - story.viewLength/2);
+let icon8 = textTitle8.sprite(require("@/images/icon.png"),{x:0, y:30, scale:{x:1,y:1}, alpha:1}).action({ yoyo: true, scale:{x:0.6,y:0.6}, alpha:0.6, repeat:-1, ease:Linear.easeIn,}, 2, indexHeight + 550 - story.viewLength);
 	icon8.anchor.x = 0.5;
 	icon8.anchor.y = 0.5;
-	textTitle8.sprite(require("@/images/text9.png"),{x:150, y:0});
+	textTitle8.sprite(require("@/images/text9.png"),{x:20, y:0});
 
-let  textDes8 = story.chapter({x:150, y:indexHeight + 5700 + 50, alpha:0 }).actionByStep({y:indexHeight + 5700 + 50 - 50, alpha:1}, 100, indexHeight + 5700 + 50 - story.viewLength/2);
-let leaf8 = textDes8.sprite(require("@/images/leaf1.png"),{x:80, y:50, rotation:-0.5}).action({ yoyo: true, rotation:0.5, repeat:-1, ease:Linear.easeIn,}, 3, indexHeight + 550 - story.viewLength);
+let  textDes8 = story.chapter({x:150, y:indexHeight + 6200 + 50, alpha:0 }).actionByStep({y:indexHeight + 6200 + 50 - 50, alpha:1}, 100, indexHeight + 6200 + 50 - story.viewLength/2);
+let leaf8 = textDes8.sprite(require("@/images/leaf1.png"),{x:220, y:50, rotation:-0.5}).action({ yoyo: true, rotation:0.5, repeat:-1, ease:Linear.easeIn,}, 3, indexHeight + 550 - story.viewLength);
 	leaf8.anchor.x = 0.5;
 	leaf8.anchor.y = 1;
 	textDes8.sprite(require("@/images/desc9.png"),{x:0, y:0});
