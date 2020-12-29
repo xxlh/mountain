@@ -62,7 +62,7 @@
     "preloader": "^4.0.3",
     "storyscroll": "^3.7.0",
     "sweetalert": "^2.1.0",
-    "vconsole": "^3.2.0"
+    "vconsole": "^3.3.4"
   },
   "description": "Build project with ES6 easier",
   "jest": {

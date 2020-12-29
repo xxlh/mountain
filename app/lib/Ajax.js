@@ -3,7 +3,7 @@ import {htmlServerHost} from './config'
 import getParams from "../js/getParams"
 let param = getParams();
 let token="";
-console.log("setItem====")
+console.log("Ajax.setItem====")
 // if(localStorage.getItem("token")!=="undefined" && localStorage.getItem("token") ){
 	
 // }else{
@@ -101,6 +101,7 @@ export let post = function (...o) {
 		data: o[1],
 		dataType: "json",
 		success: function (response, xml) {
+			console.log(response)
 			let json = eval('(' + response + ')');
 			o[2] && o[2](json);
 		},

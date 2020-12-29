@@ -13,7 +13,7 @@ class AjaxData {
 
 		return new Promise(function (resolve, reject) {
 			Ajax.post(url, function (json) {
-				console.log("getItem===="+localStorage.getItem("token"))
+				console.log("DAta.getItem===="+localStorage.getItem("token"))
 				if (json.err == 0) {
 					resolve(json.data)
 				} else if (json.err == 2001) {

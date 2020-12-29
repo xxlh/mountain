@@ -8,11 +8,13 @@ import $ from 'jquery';
 import * as Ajax from "@lib/Ajax";
 import orientationChange from './rotate'
 import App from "./html2Canvas"
+import VConsole from 'vconsole';
+var vConsole = new VConsole();
 
 var wx = {};
 //微信分享文案设置
-wx.shareLink ="http://fj.sina.cn/zt/train"; 
-wx.sharePic = "http://n3.sinaimg.cn/fj/train/img/wxShare.jpg"; 
+wx.shareLink = location.origin + location.pathname; 
+wx.sharePic = "http://n.sinaimg.cn/fj/shiniusan/img/wxShare.jpg"; 
 wx.shareTit = "邂逅2021八闽第一缕曙光"; 
 wx.shareDesc = "再见2020，你好2021。";
 wx.sharePyq = "邂逅2021八闽第一缕曙光";
@@ -38,7 +40,7 @@ window.story = new StoryScroll ({
 });
 
 
-var musicLink = "http://n.sinaimg.cn/fj/train/music.mp3";
+var musicLink = "http://n.sinaimg.cn/fj/shiniusan/assets/music.mp3";
 // 获取音乐文件
 function getMusic(){
 	$(".music").show();	
@@ -70,9 +72,9 @@ function playCotrol(){
 	})
 }
 function stop(){
-	// if(document.getElementById("rotateTips").style.display==="block")
-	// 	story.stop();
-	// else story.play();
+	if(document.getElementById("rotateTips").style.display==="block")
+		story.stop();
+	else story.play();
 }
 
 orientationChange();
@@ -241,7 +243,7 @@ let leaf = textDes1.sprite(require("@/images/leaf1.png"),{x:450, y:140, rotation
 textTitle1.interactive = true;
 textTitle1.buttonMode = true;
 textTitle1.on('pointerdown',()=>{
-	inforBoxShow(require("../images/1.jpg"), "right");
+	inforBoxShow(require("../images/2.jpg"), "right");
 });
 
 
@@ -534,7 +536,9 @@ function  inforBoxShow(picurl, direction, pubu=0){
 	img.onload = function(){
 		// if(img.complete)
 		// $("#show").empty();
-		// app.setListener('#poster');
+		// setTimeout(()=>{
+			app.setListener('#poster');
+		// },1000)
 	};
 	story.stop();
 };
