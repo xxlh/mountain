@@ -265,25 +265,63 @@ div>img {
     left: 0.05rem;
   }
 
-    .infor .user_name.left{
+    .infor .user_name.p6 {
+        left: 1.9rem;
+        text-align: left;
+        top: 1.5rem;
+        color: #fff;
+    }
+    .infor .user_name.p9{
         left: 1.9rem;
         text-align: left;
         top: 1.5rem;
         color: #000;
     }
-    .infor .user_head.left{
+    .infor .user_head.p6,.infor .user_head.p9{
         left: 0.6rem;
         top: 1.2rem;
     }
-    .infor .user_name.right{
+    .infor .user_name.p1, .infor .user_name.p3, .infor .user_name.p4, .infor .user_name.p8{
         right: 1.8rem;
         text-align: right;
         top: 1.8rem;
         color: #fff;
     }
-    .infor .user_head.right{
+    .infor .user_head.p1, .infor .user_head.p3, .infor .user_head.p4, .infor .user_head.p8{
         right: 0.6rem;
         top: 1.4rem;
+    }
+    .infor .user_name.p2{
+        left: 1.8rem;
+        text-align: left;
+        top: 2.4rem;
+        color: #fff;
+    }
+    .infor .user_head.p2{
+        left: 0.6rem;
+        top: 2.1rem;
+    }
+
+    .infor .user_name.p5{
+        right: 1.8rem;
+        text-align: right;
+        top: 1.5rem;
+        color: #fff;
+    }
+    .infor .user_head.p5{
+        right: 0.6rem;
+        top: 1.1rem;
+    }
+
+    .infor .user_name.p7{
+        right: 1.8rem;
+        text-align: right;
+        top: 6.2rem;
+        color: #000;
+    }
+    .infor .user_head.p7{
+        right: 0.6rem;
+        top: 5.8rem;
     }
   .show-pic{
     display: none;
@@ -359,3 +397,16 @@ div>img {
     top:23%;
     margin-left: -3.5rem;
   }
+
+  @media screen and (min-height: 723px) {
+    #show{
+        top: 1.5rem;
+      
+    }
+    .inforBox .close {
+        bottom: 1.5rem;
+      }
+      .infor .pic{
+        top: 1.5rem;
+      }
+}
