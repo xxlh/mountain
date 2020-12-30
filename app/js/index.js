@@ -243,7 +243,7 @@ let leaf = textDes1.sprite(require("@/images/leaf1.png"),{x:450, y:140, rotation
 textTitle1.interactive = true;
 textTitle1.buttonMode = true;
 textTitle1.on('pointerdown',()=>{
-	inforBoxShow(require("../images/1.jpg"), "p1");
+	inforBoxShow(require("../images/zhufeng3.jpg"), "p1");
 });
 
 
@@ -263,7 +263,7 @@ let leaf2 = textDes2.sprite(require("@/images/leaf1.png"),{x:0, y:40, rotation:-
 textTitle2.interactive = true;
 textTitle2.buttonMode = true;
 textTitle2.on('pointerdown', ()=>{
-	inforBoxShow(require("../images/wusong1.jpg"), "p2");
+	inforBoxShow(require("../images/wusong3.jpg"), "p2");
 });
 
 // 苔藓海 文字
@@ -282,7 +282,7 @@ let leaf3 = textDes3.sprite(require("@/images/leaf1.png"),{x:480, y:40, rotation
 textTitle3.interactive = true;
 textTitle3.buttonMode = true;
 textTitle3.on('pointerdown', ()=>{
-	inforBoxShow(require("../images/taixian.jpg"),"p3");
+	inforBoxShow(require("../images/taixian3.jpg"),"p3");
 });
 
 
@@ -314,7 +314,7 @@ let leaf4 = textDes4.sprite(require("@/images/leaf1.png"),{x:200, y:50, rotation
 textTitle4.interactive = true;
 textTitle4.buttonMode = true;
 textTitle4.on('pointerdown', ()=>{
-	inforBoxShow(require("../images/tiankong.jpg"),"p4");
+	inforBoxShow(require("../images/tiankong3.jpg"),"p4");
 });
 
 
@@ -334,7 +334,7 @@ let leaf5 = textDes5.sprite(require("@/images/leaf1.png"),{x:500, y:100, rotatio
 textTitle5.interactive = true;
 textTitle5.buttonMode = true;
 textTitle5.on('pointerdown', ()=>{
-	inforBoxShow(require("../images/zhandao1.jpg"),"p5");
+	inforBoxShow(require("../images/zhandao3.jpg"),"p5");
 });
 
 let cloundxixing = story.sprite(require("@/images/yun_piaoliao.png"), {x:0, y:indexHeight + 2600,}).actionByStep({x:-200, y:indexHeight + 2600-100}, 1000, indexHeight + 2600- story.viewLength/2);
@@ -407,7 +407,7 @@ let leaf6 = textDes6.sprite(require("@/images/leaf1.png"),{x:650, y:40, rotation
 textTitle6.interactive = true;
 textTitle6.buttonMode = true;
 textTitle6.on('pointerdown', ()=>{
-	inforBoxShow(require("../images/pubu.jpg"),"p6",1);
+	inforBoxShow(require("../images/pubu3.jpg"),"p6",1);
 });
 
 // 漂流 文字
@@ -426,7 +426,7 @@ let leaf7 = textDes7.sprite(require("@/images/leaf1.png"),{x:420, y:40, rotation
 textTitle7.interactive = true;
 textTitle7.buttonMode = true;
 textTitle7.on('pointerdown', ()=>{
-	inforBoxShow(require("../images/piaoliu1.jpg"),"p7");
+	inforBoxShow(require("../images/piaoliu3.jpg"),"p7");
 });
 
 // 索道 文字
@@ -445,7 +445,7 @@ let leaf8 = textDes8.sprite(require("@/images/leaf1.png"),{x:220, y:50, rotation
 textTitle8.interactive = true;
 textTitle8.buttonMode = true;
 textTitle8.on('pointerdown', ()=>{
-	inforBoxShow(require("../images/lanche.jpg"),"p8");
+	inforBoxShow(require("../images/lanche3.jpg"),"p8");
 });
 
 
@@ -488,7 +488,7 @@ let leaf10 = textDes10.sprite(require("@/images/leaf1.png"),{x:600, y:0, rotatio
 textTitle10.interactive = true;
 textTitle10.buttonMode = true;
 textTitle10.on('pointerdown', ()=>{
-	inforBoxShow(require("../images/richu1.jpg"),"p9");
+	inforBoxShow(require("../images/richu3.jpg"),"p9");
 });
 
 
@@ -498,7 +498,7 @@ let  textTitle12 = story.sprite(require("@/images/text12.png"), {x:(desiginwidth
 textTitle12.interactive = true;
 textTitle12.buttonMode = true;
 textTitle12.on('pointerdown', async()=>{
-	location.href = "http://s.weibo.com/weibo?q=%23%E5%8D%83%E4%B8%87%E7%B2%89%E4%B8%9D%E7%89%9B%E5%B1%B1%E8%B7%A8%E7%89%9B%E5%B9%B4%23";
+	location.href = "https://s.weibo.com/weibo?q=%23%E7%9F%B3%E7%89%9B%E5%B1%B1%E7%89%9B%E6%B0%94%E5%86%B2%E5%A4%A9%23&from=default";
 });
 
 story.loader.onProgress.add(loader => $("#percent").html((loader.progress|0) + "%"))
@@ -532,7 +532,7 @@ function  inforBoxShow(picurl, direction, position=0){
 		// if(img.complete)
 		// $("#show").empty();
 		// setTimeout(()=>{
-			app.setListener('#poster');
+			// app.setListener('#poster');
 		// },1000)
 	};
 	story.stop();
