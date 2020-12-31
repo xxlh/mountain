@@ -58,7 +58,18 @@ let loader = preloader({
 });
 
 loader.add(require('../images/index.png'));
+loader.add(require('../images/head.png'));
 loader.add(require('../images/scroll_1.png'));
+loader.add(require('../images/zhufeng3.jpg'));
+loader.add(require('../images/wusong3.jpg'));
+loader.add(require('../images/tiankong3.jpg'));
+loader.add(require('../images/richu3.jpg'));
+loader.add(require('../images/zhandao3.jpg'));
+loader.add(require('../images/pubu3.jpg'));
+loader.add(require('../images/piaoliu3.jpg'));
+loader.add(require('../images/lanche3.jpg'));
+loader.add(require('../images/taixian3.jpg'));
+
 loader.on('progress',function(p) {
 	loading.update(Math.floor(p*100), -1);
 });

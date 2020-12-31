@@ -263,7 +263,7 @@ let leaf2 = textDes2.sprite(require("@/images/leaf1.png"),{x:0, y:40, rotation:-
 textTitle2.interactive = true;
 textTitle2.buttonMode = true;
 textTitle2.on('pointerdown', ()=>{
-	inforBoxShow(require("../images/wusong3.jpg"), "p2");
+	inforBoxShow(require("../images/wusong8.jpg"), "p2");
 });
 
 // 苔藓海 文字
@@ -532,7 +532,7 @@ function  inforBoxShow(picurl, direction, position=0){
 		// if(img.complete)
 		// $("#show").empty();
 		// setTimeout(()=>{
-			// app.setListener('#poster');
+			app.setListener('#poster');
 		// },1000)
 	};
 	story.stop();

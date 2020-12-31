@@ -231,6 +231,12 @@ div>img {
     border-radius: 50px;
     color: #fff;
     font-size: 0.35rem;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
   }
 
   .pic-des{
@@ -243,6 +249,12 @@ div>img {
     text-align: center;
     font-size: 0.25rem;
     color: #fff;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
   }
   .infor .pic{
     position: absolute;
